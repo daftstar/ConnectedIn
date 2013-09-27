@@ -1,4 +1,9 @@
-<h1> 4 peeps from MakerSquare </h1>
+<h1> All ConnectedIn Profiles </h1>
 
-
-Name: <%= show(:profile_name) =>
+<ul>
+	<% @profile_all.each do |profile| %>
+	<li>username:		<%= link_to profile.username, profile_url(profile.id) %></li>
+	<li>first name: <%= profile.first_name %></li>
+	<hr>
+	<% end %>
+</ul>

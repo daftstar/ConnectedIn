@@ -1,9 +1,18 @@
-<h1> 4 peeps from MakerSquare </h1>
+<h1> ConnectedIn Profile </h1>
 
 
-<h1>	     Name: <%= @profiles[:name] %></h1> 
-<h2>			 City: <%= @profiles[:city] %></h2>
-<h3>Description: <%= @profiles[:description] %></h3>
+<h1>	    User Name: 			<%= @profile[:username] %>		</h1> 
+<h2>			First Name: 		<%= @profile[:first_name] %>	</h2>
+<h3>			Last Name: 			<%= @profile[:last_name] %>		</h3>
+ <p>			Description: 		<%= @profile[:description] %>	</p>
 <hr>
-			<img src = <%= @profiles[:picture_url] %>>
+<h4>			Where I'm from: <img src = <%= @profile[:city_pic] %>> </h4>
+<h4>			Profile Pic: 		<img src = <%= @profile[:profile_pic] %>> </h4>
+	<p>			Facebook Page:  <%= @profile[:facebook_page] %></p>
 <hr>
+
+<p><%= link_to 'back', profiles_url %></p>
+
+
+
+
